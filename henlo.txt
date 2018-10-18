@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 test file in test branch
 =======
 
@@ -16,3 +17,8 @@ int main() {
 	return 0;
 }
 >>>>>>> testBranch
+=======
+test file in test branch
+
+Henlo I am anthony
+>>>>>>> master
