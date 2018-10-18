@@ -1,4 +1,6 @@
+#include <iostream>
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 test file in test branch
 =======
@@ -7,4 +9,10 @@ test file in test branch
 
 
 Hello?????
+>>>>>>> testBranch
+=======
+int main() {
+	std::cout << "Hello!";
+	return 0;
+}
 >>>>>>> testBranch
