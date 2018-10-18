@@ -1,4 +1,24 @@
+#include <iostream>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+test file in test branch
+=======
+
+
+
+
+Hello?????
+>>>>>>> testBranch
+=======
+int main() {
+	std::cout << "Hello!";
+	return 0;
+}
+>>>>>>> testBranch
+=======
 test file in test branch
 
 Henlo I am anthony
+>>>>>>> master
