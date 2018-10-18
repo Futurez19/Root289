@@ -1,1 +1,2 @@
-same file different contents
+
+test file in test branch
