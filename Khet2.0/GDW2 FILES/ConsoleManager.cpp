@@ -60,6 +60,10 @@ void setCursorPos(short x, short y) {
 	SetConsoleCursorPosition(hConsole, { cursorX, cursorY });
 }
 
+void setConsoleColour(short colour) {
+	SetConsoleTextAttribute(hConsole, colour);
+}
+
 void cls()
 {
     // Get the Win32 handle representing standard output.
