@@ -3,6 +3,7 @@
 #include <Windows.h>
 
 #include "InputManager.h"
+#include "ConsoleManager.h"
 
 // Arrays that hold information about the current keyboard state
 bool keys[0xFF] { false };

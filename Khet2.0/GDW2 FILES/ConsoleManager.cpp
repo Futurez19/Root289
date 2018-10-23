@@ -21,6 +21,7 @@ int initConsole(short width, short height) {
 	if (!setConsoleWindowSize(width, height)) {
 		return -1;
 	}
+
 	return 0;
 }
 
