@@ -192,6 +192,7 @@ void initSphinx(Piece sphinx, int team, int angle)
 
 	}
 
+
 	sphinx.line_1Orient1 = "`A`";
 	sphinx.line_2Orient1 = "#0#";
 	sphinx.line_3Orient1 = "###";
