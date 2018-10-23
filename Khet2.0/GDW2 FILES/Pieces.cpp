@@ -23,21 +23,21 @@ void initScarab(Piece scarab, int team, int angle)
 
 
 
-	scarab.line_1Orient1 = "\\··";
-	scarab.line_2Orient1 = "·\\·";
-	scarab.line_3Orient1 = "··\\";
+	scarab.Orient1 = "\\··";
+	scarab.Orient1 += "·\\·";
+	scarab.Orient1 += "··\\";
 
-	scarab.line_1Orient2 = "··/";
-	scarab.line_2Orient2 = "·/·";
-	scarab.line_3Orient2 = "/··";
+	scarab.Orient2 = "··/";
+	scarab.Orient2 += "·/·";
+	scarab.Orient2 += "/··";
 
-	scarab.line_1Orient3 = "\\··";
-	scarab.line_2Orient3 = "·\\·";
-	scarab.line_3Orient3 = "··\\";
+	scarab.Orient3 = "\\··";
+	scarab.Orient3 += "·\\·";
+	scarab.Orient3 += "··\\";
 
-	scarab.line_1Orient4 = "··/";
-	scarab.line_2Orient4 = "·/·";
-	scarab.line_3Orient4 = "/··";
+	scarab.Orient4 = "··/";
+	scarab.Orient4 += "·/·";
+	scarab.Orient4 += "/··";
 
 
 }
@@ -80,21 +80,21 @@ void initPyramid(Piece pyramid, int team, int angle)
 		 
 	}
 
-	pyramid.line_1Orient1 = "\\··";
-	pyramid.line_2Orient1 = "#\\·";
-	pyramid.line_3Orient1 = "##\\";
+	pyramid.Orient1 = "\\··";
+	pyramid.Orient1 += "#\\·";
+	pyramid.Orient1 += "##\\";
 //	
-	pyramid.line_1Orient2 = "··/";
-	pyramid.line_2Orient2 = "·/#";
-	pyramid.line_3Orient2 = "/##";
+	pyramid.Orient2 = "··/";
+	pyramid.Orient2 += "·/#";
+	pyramid.Orient2 += "/##";
 //	
-	pyramid.line_1Orient3 = "\\##";
-	pyramid.line_2Orient3 = "·\\#";
-	pyramid.line_3Orient3 = "··\\";
+	pyramid.Orient3 = "\\##";
+	pyramid.Orient3 += "·\\#";
+	pyramid.Orient3 += "··\\";
 //	
-	pyramid.line_1Orient4 = "##/";
-	pyramid.line_2Orient4 = "#/·";
-	pyramid.line_3Orient4 = "/··";
+	pyramid.Orient4 = "##/";
+	pyramid.Orient4 += "#/·";
+	pyramid.Orient4 += "/··";
 
 }
 
@@ -136,21 +136,21 @@ void initAnubis(Piece anubis, int team, int angle)
 
 	}
 
-	anubis.line_1Orient1 = "---";
-	anubis.line_2Orient1 = "###";
-	anubis.line_3Orient1 = "###";
+	anubis.Orient1 = "---";
+	anubis.Orient1 += "###";
+	anubis.Orient1 += "###";
 	//	
-	anubis.line_1Orient2 = "|##";
-	anubis.line_2Orient2 = "|##";
-	anubis.line_3Orient2 = "|##";		 
+	anubis.Orient2 = "|##";
+	anubis.Orient2 += "|##";
+	anubis.Orient2 += "|##";		 
 	//	
-	anubis.line_1Orient3 = "###";
-	anubis.line_2Orient3 = "###";
-	anubis.line_3Orient3 = "---";
+	anubis.Orient3 = "###";
+	anubis.Orient3 += "###";
+	anubis.Orient3 += "---";
 	//	
-	anubis.line_1Orient4 = "##|";
-	anubis.line_2Orient4 = "##|";
-	anubis.line_3Orient4 = "##|";
+	anubis.Orient4 = "##|";
+	anubis.Orient4 += "##|";
+	anubis.Orient4 += "##|";
 
 }
 
@@ -193,21 +193,21 @@ void initSphinx(Piece sphinx, int team, int angle)
 	}
 
 
-	sphinx.line_1Orient1 = "·A·";
-	sphinx.line_2Orient1 = "#0#";
-	sphinx.line_3Orient1 = "###";
+	sphinx.Orient1 = "·A·";
+	sphinx.Orient1 += "#0#";
+	sphinx.Orient1 += "###";
 	//	
-	sphinx.line_1Orient2 = "·##";
-	sphinx.line_2Orient2 = "<0#";
-	sphinx.line_3Orient2 = "·##";
+	sphinx.Orient2 = "·##";
+	sphinx.Orient2 += "<0#";
+	sphinx.Orient2 += "·##";
 	//	
-	sphinx.line_1Orient3 = "###";
-	sphinx.line_2Orient3 = "#0#";
-	sphinx.line_3Orient3 = "·V·";
+	sphinx.Orient3 = "###";
+	sphinx.Orient3 += "#0#";
+	sphinx.Orient3 += "·V·";
 	//	
-	sphinx.line_1Orient4 = "##·";
-	sphinx.line_2Orient4 = "#0>";
-	sphinx.line_3Orient4 = "##·";
+	sphinx.Orient4 = "##·";
+	sphinx.Orient4 += "#0>";
+	sphinx.Orient4 += "##·";
 }
 
 void initPharoah(Piece pharoah, int team, int angle = 1)
@@ -221,9 +221,9 @@ void initPharoah(Piece pharoah, int team, int angle = 1)
 	pharoah.left = false;
 	pharoah.right = false;
 
-	pharoah.line_1Orient1 = "/-\\";
-	pharoah.line_2Orient1 = "-+-";
-	pharoah.line_3Orient1 = "\\-/";
+	pharoah.Orient1 = "/-\\";
+	pharoah.Orient1 += "-+-";
+	pharoah.Orient1 += "\\-/";
 	//	
 
 }

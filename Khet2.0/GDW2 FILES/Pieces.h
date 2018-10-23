@@ -34,20 +34,16 @@ public:
 
 	// How the pieces are drawn line by line. includes orientations
 
-	std::string line_1Orient1;
-	std::string line_2Orient1;
-	std::string line_3Orient1;
+	std::string Orient1;
 
-	std::string line_1Orient2;
-	std::string line_2Orient2;
-	std::string line_3Orient2;
 
-	std::string line_1Orient3;
-	std::string line_2Orient3;
-	std::string line_3Orient3;
+	std::string Orient2;
 
-	std::string line_1Orient4;
-	std::string line_2Orient4;
-	std::string line_3Orient4;
+
+	std::string Orient3;
+
+
+	std::string Orient4;
+
 private:
 };
