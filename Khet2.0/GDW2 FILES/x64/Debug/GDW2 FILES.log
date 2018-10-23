@@ -1,0 +1,11 @@
+﻿  Pieces.cpp
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(26): warning C4129: '`': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(27): warning C4129: '`': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(34): warning C4129: '`': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(35): warning C4129: '`': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(83): warning C4129: '`': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(84): warning C4129: '`': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(91): warning C4129: '#': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(92): warning C4129: '#': unrecognized character escape sequence
+c:\users\100702011\documents\school notes\game development workshop\repos\root289\root289\khet2.0\gdw2 files\pieces.cpp(225): warning C4129: '-': unrecognized character escape sequence
+LINK : fatal error LNK1561: entry point must be defined
