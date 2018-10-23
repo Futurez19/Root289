@@ -4,7 +4,9 @@
 #include <string>
 
 // Scarab Object
-struct Piece {
+class Piece {
+public:
+
 
 	int player; //Which player does this piece belong to? Should be declared upon piece declaration.
 	
@@ -13,6 +15,13 @@ struct Piece {
 	bool hasMirror = false; // Checks if has mirror
 
 	bool hasLaser = false; // For the sphinx. Otherwise False
+
+	// Denotes what piece it is.
+	bool isScarab = false;
+	bool isAnubis = false;
+	bool isPyramid = false;
+	bool isSphinx = false;
+	bool isPharoah = false;
 
 	//Checks active mirror intake angles or defense angle.
 	bool up = false;	
@@ -40,5 +49,5 @@ struct Piece {
 	std::string line_1Orient4;
 	std::string line_2Orient4;
 	std::string line_3Orient4;
-
-} Scarab,Pyramid,Sphinx,Anubis,Pharoah;
+private:
+};

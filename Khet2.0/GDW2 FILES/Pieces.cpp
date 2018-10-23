@@ -1,6 +1,7 @@
 #include "Pieces.h"
 #include <iostream>
 
+
 void initScarab(Piece, int, int);
 void initPyramid(Piece, int, int);
 void initAnubis(Piece, int, int);
