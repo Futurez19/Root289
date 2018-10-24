@@ -41,4 +41,10 @@ struct Piece {
 	std::string line_2Orient4;
 	std::string line_3Orient4;
 
-} Scarab,Pyramid,Sphinx,Anubis,Pharoah;
+};
+
+extern void initScarab(Piece, int, int);
+extern void initPyramid(Piece, int, int);
+extern void initAnubis(Piece, int, int);
+extern void initSphinx(Piece, int, int);
+extern void initPharoah(Piece, int, int);

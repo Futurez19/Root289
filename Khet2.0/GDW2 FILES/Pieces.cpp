@@ -1,12 +1,6 @@
 #include "Pieces.h"
 #include <iostream>
 
-void initScarab(Piece, int, int);
-void initPyramid(Piece, int, int);
-void initAnubis(Piece, int, int);
-void initSphinx(Piece, int, int);
-void initPharoah(Piece, int, int);
-
 void initScarab(Piece scarab, int team, int angle)
 {
 	scarab.player = team;
@@ -22,16 +16,16 @@ void initScarab(Piece scarab, int team, int angle)
 
 
 
-	scarab.line_1Orient1 = "\``";
-	scarab.line_2Orient1 = "`\`";
+	scarab.line_1Orient1 = "\\``";
+	scarab.line_2Orient1 = "`\\`";
 	scarab.line_3Orient1 = "``\\";
 
 	scarab.line_1Orient2 = "``/";
 	scarab.line_2Orient2 = "`/`";
 	scarab.line_3Orient2 = "/``";
 
-	scarab.line_1Orient3 = "\``";
-	scarab.line_2Orient3 = "`\`";
+	scarab.line_1Orient3 = "\\``";
+	scarab.line_2Orient3 = "`\\`";
 	scarab.line_3Orient3 = "``\\";
 
 	scarab.line_1Orient4 = "``/";
@@ -79,16 +73,16 @@ void initPyramid(Piece pyramid, int team, int angle)
 		 
 	}
 
-	pyramid.line_1Orient1 = "\``";
-	pyramid.line_2Orient1 = "#\`";
+	pyramid.line_1Orient1 = "\\``";
+	pyramid.line_2Orient1 = "#\\`";
 	pyramid.line_3Orient1 = "##\\";
 //	
 	pyramid.line_1Orient2 = "``/";
 	pyramid.line_2Orient2 = "`/#";
 	pyramid.line_3Orient2 = "/##";
 //	
-	pyramid.line_1Orient3 = "\##";
-	pyramid.line_2Orient3 = "`\#";
+	pyramid.line_1Orient3 = "\\##";
+	pyramid.line_2Orient3 = "`\\#";
 	pyramid.line_3Orient3 = "``\\";
 //	
 	pyramid.line_1Orient4 = "##/";
@@ -221,7 +215,7 @@ void initPharoah(Piece pharoah, int team, int angle = 1)
 
 	pharoah.line_1Orient1 = "/-\\";
 	pharoah.line_2Orient1 = "-+-";
-	pharoah.line_3Orient1 = "\-/";
+	pharoah.line_3Orient1 = "\\-/";
 	//	
 
 }
