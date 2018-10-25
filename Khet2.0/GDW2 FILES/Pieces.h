@@ -3,18 +3,9 @@
 #include <iostream>
 #include <string>
 
-#include <iostream>
 
-// Initializes base statistics for pieces.
-void initScarab(Piece, int, int);
-void initPyramid(Piece, int, int);
-void initAnubis(Piece, int, int);
-void initSphinx(Piece, int, int);
-void initPharoah(Piece, int, int);
 
-//Piece interactions.
-void rotateCCW(Piece);
-void rotateCW(Piece);
+
 
 //int deflect(laser,piece);
 
@@ -22,7 +13,16 @@ void rotateCW(Piece);
 // Scarab Object
 class Piece {
 public:
+	// Initializes base statistics for pieces.
+	void initScarab(int, int);
+	void initPyramid(int, int);
+	void initAnubis( int, int);
+	void initSphinx( int, int);
+	void initPharoah( int, int);
 
+	//Piece interactions.
+	void rotateCCW();
+	void rotateCW();
 
 	int player; //Which player does this piece belong to? Should be declared upon piece declaration.
 	
@@ -61,5 +61,8 @@ public:
 
 	std::string Orient4;
 
+
+
 private:
 };
+

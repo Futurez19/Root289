@@ -37,9 +37,6 @@ int setConsoleWindowSize(short width, short height) {
 }
 
 int setConsoleWindowTitle(std::string title) {
-	//std::wstring temp = std::wstring(title.begin(), title.end());
-	//LPCWSTR lpcTitle = temp.c_str();
-
 	if (!SetConsoleTitle(title.c_str())) {
 		std::cout << "SetConsoleTitle failed with error " << GetLastError() << "\n";
 		return -1;
