@@ -3,6 +3,22 @@
 #include <iostream>
 #include <string>
 
+#include <iostream>
+
+// Initializes base statistics for pieces.
+void initScarab(Piece, int, int);
+void initPyramid(Piece, int, int);
+void initAnubis(Piece, int, int);
+void initSphinx(Piece, int, int);
+void initPharoah(Piece, int, int);
+
+//Piece interactions.
+void rotateCCW(Piece);
+void rotateCW(Piece);
+
+//int deflect(laser,piece);
+
+
 // Scarab Object
 class Piece {
 public:

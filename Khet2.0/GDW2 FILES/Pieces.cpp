@@ -1,12 +1,6 @@
 #include "Pieces.h"
-#include <iostream>
 
-
-void initScarab(Piece, int, int);
-void initPyramid(Piece, int, int);
-void initAnubis(Piece, int, int);
-void initSphinx(Piece, int, int);
-void initPharoah(Piece, int, int);
+// Mostly Function definitions
 
 void initScarab(Piece scarab, int team, int angle)
 {
@@ -102,7 +96,7 @@ void initAnubis(Piece anubis, int team, int angle)
 {
 
 	anubis.player = team;
-	anubis.hasMirror = false;
+	anubis.hasMirror = true; // it doesnt actually have a mirror
 	anubis.angle = angle;
 
 	switch (anubis.angle)
@@ -225,5 +219,154 @@ void initPharoah(Piece pharoah, int team, int angle = 1)
 	pharoah.Orient1 += "-+-";
 	pharoah.Orient1 += "\\-/";
 	//	
+
+}
+
+void rotateCCW(Piece p1)
+{	
+	if (!(p1.angle == 4))
+	{
+		p1.angle += 1;
+	}
+	else
+		p1.angle = 1;
+
+	switch (p1.angle)  // may not even need this but just incase
+	{
+	case 1:
+		//redraw the piece with Orient 1
+		break;
+	case 2:
+		//redaw the piece with Orient 2
+		break;
+	case 3:
+		//redraw the piece with Orient 3
+		break;
+	case 4:
+		//redraw the piece with Orient 4
+		break;
+	}
+}
+
+void rotateCW(Piece p1)
+{
+	if (!(p1.angle == 1))
+	{
+		p1.angle -= 1;
+	}
+	else
+		p1.angle = 4;
+
+	switch (p1.angle)
+	{
+	case 1:
+		//redraw the piece with Orient 1
+		break;
+	case 2:
+		//redaw the piece with Orient 2
+		break;
+	case 3:
+		//redraw the piece with Orient 3
+		break;
+	case 4:
+		//redraw the piece with Orient 4
+		break;
+	}
+}
+
+
+//Needs a laser class//obj//struct that has a variable that represents it's direct.
+//In this case i used 1-4 to represent the cardinal directions. (1 = up / 2 = left / 3 = down / 4 = right)
+//I apologize for the messy switches.
+
+//int deflect(Laser laser, Piece p1)
+{
+	//if (p1.hasMirror)
+	//{
+	//	switch (laser.angle)//dependant on incoming laser
+	//	{
+	//	case 1:		  //laser is going up;
+
+	//		if (p1.down)
+	//		{//first checks that it can recieve the laser
+	//			if (p1.left)//sets the laser's direction depending on resultant mirror
+	//			{
+	//				laser.angle = 2;
+	//			}
+	//			else if (p1.right)
+	//			{
+	//				laser.angle = 4;
+	//			}
+	//			else if (p1.isAnubis)
+	//				stop();//stop the laser
+	//			else
+	//				// piece dies
+	//		}
+	//		else
+	//			//piece dies
+
+	//		break;
+	//	case 2:		 // laser going left
+
+	//		if (p1.right)
+	//		{//first checks that it can recieve the laser
+	//			if (p1.up)//sets the laser's direction depending on resultant mirror
+	//			{
+	//				laser.angle = 1;
+	//			}
+	//			else if (p1.down)
+	//			{
+	//				laser.angle = 3;
+	//			}
+	//			else if (p1.isAnubis)
+	//				stop();//stop the laser
+	//			else
+	//				// piece dies
+	//		}
+	//		else
+	//			//piece dies
+	//		break;
+	//	case 3:		 // laser going down
+	//		if (p1.up)
+	//		{//first checks that it can recieve the laser
+	//			if (p1.left)//sets the laser's direction depending on resultant mirror
+	//			{
+	//				laser.angle = 2;
+	//			}
+	//			else if (p1.right)
+	//			{
+	//				laser.angle = 4;
+	//			}
+	//			else if (p1.isAnubis)
+	//				stop();//stop the laser
+	//			else
+	//				// piece dies
+	//		}
+	//		else
+	//			//piece dies
+	//		break;
+	//	case 4:		  //laser going right
+	//		if (p1.left)
+	//		{//first checks that it can recieve the laser
+	//			if (p1.up)//sets the laser's direction depending on resultant mirror
+	//			{
+	//				laser.angle = 1;
+	//			}
+	//			else if (p1.down)
+	//			{
+	//				laser.angle = 3;
+	//			}
+	//			else if (p1.isAnubis)
+	//				stop();//stop the laser
+	//			else
+	//				// piece dies
+	//		}
+	//		else
+	//			//piece dies
+	//		break;
+	//	}
+ //   }
+	//else
+	//	//piece dies
 
 }
