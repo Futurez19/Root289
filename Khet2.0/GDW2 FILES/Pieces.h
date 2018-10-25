@@ -3,8 +3,26 @@
 #include <iostream>
 #include <string>
 
+#include <iostream>
+
+// Initializes base statistics for pieces.
+void initScarab(Piece, int, int);
+void initPyramid(Piece, int, int);
+void initAnubis(Piece, int, int);
+void initSphinx(Piece, int, int);
+void initPharoah(Piece, int, int);
+
+//Piece interactions.
+void rotateCCW(Piece);
+void rotateCW(Piece);
+
+//int deflect(laser,piece);
+
+
 // Scarab Object
-struct Piece {
+class Piece {
+public:
+
 
 	int player; //Which player does this piece belong to? Should be declared upon piece declaration.
 	
@@ -13,6 +31,13 @@ struct Piece {
 	bool hasMirror = false; // Checks if has mirror
 
 	bool hasLaser = false; // For the sphinx. Otherwise False
+
+	// Denotes what piece it is.
+	bool isScarab = false;
+	bool isAnubis = false;
+	bool isPyramid = false;
+	bool isSphinx = false;
+	bool isPharoah = false;
 
 	//Checks active mirror intake angles or defense angle.
 	bool up = false;	
@@ -25,26 +50,16 @@ struct Piece {
 
 	// How the pieces are drawn line by line. includes orientations
 
-	std::string line_1Orient1;
-	std::string line_2Orient1;
-	std::string line_3Orient1;
+	std::string Orient1;
 
-	std::string line_1Orient2;
-	std::string line_2Orient2;
-	std::string line_3Orient2;
 
-	std::string line_1Orient3;
-	std::string line_2Orient3;
-	std::string line_3Orient3;
+	std::string Orient2;
 
-	std::string line_1Orient4;
-	std::string line_2Orient4;
-	std::string line_3Orient4;
 
+	std::string Orient3;
+
+
+	std::string Orient4;
+
+private:
 };
-
-extern void initScarab(Piece&, int, int);
-extern void initPyramid(Piece&, int, int);
-extern void initAnubis(Piece&, int, int);
-extern void initSphinx(Piece&, int, int);
-extern void initPharoah(Piece&, int, int);
