@@ -1,7 +1,7 @@
 #include "Pieces.h"
 #include <iostream>
 
-void initScarab(Piece scarab, int team, int angle)
+void initScarab(Piece &scarab, int team, int angle)
 {
 	scarab.player = team;
 
@@ -35,7 +35,7 @@ void initScarab(Piece scarab, int team, int angle)
 
 }
 
-void initPyramid(Piece pyramid, int team, int angle)
+void initPyramid(Piece &pyramid, int team, int angle)
 {
 
 	pyramid.player = team;
@@ -91,7 +91,7 @@ void initPyramid(Piece pyramid, int team, int angle)
 
 }
 
-void initAnubis(Piece anubis, int team, int angle)
+void initAnubis(Piece &anubis, int team, int angle)
 {
 
 	anubis.player = team;
@@ -147,7 +147,7 @@ void initAnubis(Piece anubis, int team, int angle)
 
 }
 
-void initSphinx(Piece sphinx, int team, int angle)
+void initSphinx(Piece &sphinx, int team, int angle)
 {
 	sphinx.player = team;
 	sphinx.hasMirror = false;
@@ -202,7 +202,7 @@ void initSphinx(Piece sphinx, int team, int angle)
 	sphinx.line_3Orient4 = "##`";
 }
 
-void initPharoah(Piece pharoah, int team, int angle = 1)
+void initPharoah(Piece &pharoah, int team, int angle = 1)
 {
 	pharoah.player = team;
 	pharoah.hasMirror = false;

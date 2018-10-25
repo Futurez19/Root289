@@ -43,8 +43,8 @@ struct Piece {
 
 };
 
-extern void initScarab(Piece, int, int);
-extern void initPyramid(Piece, int, int);
-extern void initAnubis(Piece, int, int);
-extern void initSphinx(Piece, int, int);
-extern void initPharoah(Piece, int, int);
+extern void initScarab(Piece&, int, int);
+extern void initPyramid(Piece&, int, int);
+extern void initAnubis(Piece&, int, int);
+extern void initSphinx(Piece&, int, int);
+extern void initPharoah(Piece&, int, int);
