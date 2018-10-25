@@ -2,184 +2,184 @@
 
 // Mostly Function definitions
 
-void initScarab(Piece scarab, int team, int angle)
+void Piece::initScarab(int team, int angle)
 {
-	scarab.player = team;
+	this->player = team;
 
-	scarab.hasMirror = true;
-	scarab.angle = angle;
-
-
-	scarab.up = true;
-	scarab.down = true;
-	scarab.left = true;
-	scarab.right = true;
+	this->hasMirror = true;
+	this->angle = angle;
 
 
+	this->up = true;
+	this->down = true;
+	this->left = true;
+	this->right = true;
 
-	scarab.Orient1 = "\\··";
-	scarab.Orient1 += "·\\·";
-	scarab.Orient1 += "··\\";
 
-	scarab.Orient2 = "··/";
-	scarab.Orient2 += "·/·";
-	scarab.Orient2 += "/··";
 
-	scarab.Orient3 = "\\··";
-	scarab.Orient3 += "·\\·";
-	scarab.Orient3 += "··\\";
+	this->Orient1 = "\\··";
+	this->Orient1 += "·\\·";
+	this->Orient1 += "··\\";
 
-	scarab.Orient4 = "··/";
-	scarab.Orient4 += "·/·";
-	scarab.Orient4 += "/··";
+	this->Orient2 = "··/";
+	this->Orient2 += "·/·";
+	this->Orient2 += "/··";
+
+	this->Orient3 = "\\··";
+	this->Orient3 += "·\\·";
+	this->Orient3 += "··\\";
+
+	this->Orient4 = "··/";
+	this->Orient4 += "·/·";
+	this->Orient4 += "/··";
 
 
 }
 
-void initPyramid(Piece pyramid, int team, int angle)
+void Piece::initPyramid(int team, int angle)
 {
 
-	pyramid.player = team;
-	pyramid.hasMirror = true;
-	pyramid.angle = angle;
+	this->player = team;
+	this->hasMirror = true;
+	this->angle = angle;
 	
-	switch (pyramid.angle)
+	switch (this->angle)
 	{
 	 case 1:
-		 pyramid.up = true;
-		 pyramid.down = false;
-		 pyramid.left = false;
-		 pyramid.right = true;
+		 this->up = true;
+		 this->down = false;
+		 this->left = false;
+		 this->right = true;
 		break;
 	 case 2:
-		 pyramid.up = true;
-		 pyramid.down = false;
-		 pyramid.left = true;
-		 pyramid.right = false;
+		 this->up = true;
+		 this->down = false;
+		 this->left = true;
+		 this->right = false;
 		 break;
 	 case 3:
-		 pyramid.up = false;
-		 pyramid.down = true;
-		 pyramid.left = true;
-		 pyramid.right = false;
+		 this->up = false;
+		 this->down = true;
+		 this->left = true;
+		 this->right = false;
 		 break;
 	 case 4:
-		 pyramid.up = false;
-		 pyramid.down = true;
-		 pyramid.left = false;
-		 pyramid.right = true;
+		 this->up = false;
+		 this->down = true;
+		 this->left = false;
+		 this->right = true;
 		 break;
 	 default:
 		 std::cout << "OOF something broke.";
 		 
 	}
 
-	pyramid.Orient1 = "\\··";
-	pyramid.Orient1 += "#\\·";
-	pyramid.Orient1 += "##\\";
+	this->Orient1 = "\\··";
+	this->Orient1 += "#\\·";
+	this->Orient1 += "##\\";
 //	
-	pyramid.Orient2 = "··/";
-	pyramid.Orient2 += "·/#";
-	pyramid.Orient2 += "/##";
+	this->Orient2 = "··/";
+	this->Orient2 += "·/#";
+	this->Orient2 += "/##";
 //	
-	pyramid.Orient3 = "\\##";
-	pyramid.Orient3 += "·\\#";
-	pyramid.Orient3 += "··\\";
+	this->Orient3 = "\\##";
+	this->Orient3 += "·\\#";
+	this->Orient3 += "··\\";
 //	
-	pyramid.Orient4 = "##/";
-	pyramid.Orient4 += "#/·";
-	pyramid.Orient4 += "/··";
+	this->Orient4 = "##/";
+	this->Orient4 += "#/·";
+	this->Orient4 += "/··";
 
 }
 
-void initAnubis(Piece anubis, int team, int angle)
+void Piece::initAnubis(int team, int angle)
 {
 
-	anubis.player = team;
-	anubis.hasMirror = true; // it doesnt actually have a mirror
-	anubis.angle = angle;
+	this->player = team;
+	this->hasMirror = true; // it doesnt actually have a mirror
+	this->angle = angle;
 
-	switch (anubis.angle)
+	switch (this->angle)
 	{
 	case 1:
-		anubis.up = true;
-		anubis.down = false;
-		anubis.left = false;
-		anubis.right = true;
+		this->up = true;
+		this->down = false;
+		this->left = false;
+		this->right = true;
 		break;
 	case 2:
-		anubis.up = false;
-		anubis.down = false;
-		anubis.left = true;
-		anubis.right = false;
+		this->up = false;
+		this->down = false;
+		this->left = true;
+		this->right = false;
 		break;
 	case 3:
-		anubis.up = false;
-		anubis.down = true;
-		anubis.left = false;
-		anubis.right = false;
+		this->up = false;
+		this->down = true;
+		this->left = false;
+		this->right = false;
 		break;
 	case 4:
-		anubis.up = false;
-		anubis.down = false;
-		anubis.left = false;
-		anubis.right = true;
+		this->up = false;
+		this->down = false;
+		this->left = false;
+		this->right = true;
 		break;
 	default:
 		std::cout << "OOF something broke.";
 
 	}
 
-	anubis.Orient1 = "---";
-	anubis.Orient1 += "###";
-	anubis.Orient1 += "###";
+	this->Orient1 = "---";
+	this->Orient1 += "###";
+	this->Orient1 += "###";
 	//	
-	anubis.Orient2 = "|##";
-	anubis.Orient2 += "|##";
-	anubis.Orient2 += "|##";		 
+	this->Orient2 = "|##";
+	this->Orient2 += "|##";
+	this->Orient2 += "|##";		 
 	//	
-	anubis.Orient3 = "###";
-	anubis.Orient3 += "###";
-	anubis.Orient3 += "---";
+	this->Orient3 = "###";
+	this->Orient3 += "###";
+	this->Orient3 += "---";
 	//	
-	anubis.Orient4 = "##|";
-	anubis.Orient4 += "##|";
-	anubis.Orient4 += "##|";
+	this->Orient4 = "##|";
+	this->Orient4 += "##|";
+	this->Orient4 += "##|";
 
 }
 
-void initSphinx(Piece sphinx, int team, int angle)
+void Piece::initSphinx(int team, int angle)
 {
-	sphinx.player = team;
-	sphinx.hasMirror = false;
-	sphinx.hasLaser = true;
-	sphinx.angle = angle;
+	this->player = team;
+	this->hasMirror = false;
+	this->hasLaser = true;
+	this->angle = angle;
 
-	switch (sphinx.angle)
+	switch (this->angle)
 	{
 	case 1:
-		sphinx.up = true;
-		sphinx.down = true;
-		sphinx.left = true;
-		sphinx.right = true;
+		this->up = true;
+		this->down = true;
+		this->left = true;
+		this->right = true;
 		break;
 	case 2:
-		sphinx.up = true;
-		sphinx.down = true;
-		sphinx.left = true;
-		sphinx.right = true;
+		this->up = true;
+		this->down = true;
+		this->left = true;
+		this->right = true;
 		break;
 	case 3:
-		sphinx.up = true;
-		sphinx.down = true;
-		sphinx.left = true;
-		sphinx.right = true;
+		this->up = true;
+		this->down = true;
+		this->left = true;
+		this->right = true;
 		break;
 	case 4:
-		sphinx.up = true;
-		sphinx.down = true;
-		sphinx.left = true;
-		sphinx.right = true;
+		this->up = true;
+		this->down = true;
+		this->left = true;
+		this->right = true;
 		break;
 	default:
 		std::cout << "OOF something broke.";
@@ -187,51 +187,51 @@ void initSphinx(Piece sphinx, int team, int angle)
 	}
 
 
-	sphinx.Orient1 = "·A·";
-	sphinx.Orient1 += "#0#";
-	sphinx.Orient1 += "###";
+	this->Orient1 = "·A·";
+	this->Orient1 += "#0#";
+	this->Orient1 += "###";
 	//	
-	sphinx.Orient2 = "·##";
-	sphinx.Orient2 += "<0#";
-	sphinx.Orient2 += "·##";
+	this->Orient2 = "·##";
+	this->Orient2 += "<0#";
+	this->Orient2 += "·##";
 	//	
-	sphinx.Orient3 = "###";
-	sphinx.Orient3 += "#0#";
-	sphinx.Orient3 += "·V·";
+	this->Orient3 = "###";
+	this->Orient3 += "#0#";
+	this->Orient3 += "·V·";
 	//	
-	sphinx.Orient4 = "##·";
-	sphinx.Orient4 += "#0>";
-	sphinx.Orient4 += "##·";
+	this->Orient4 = "##·";
+	this->Orient4 += "#0>";
+	this->Orient4 += "##·";
 }
 
-void initPharoah(Piece pharoah, int team, int angle = 1)
+void Piece::initPharoah(int team, int angle = 1)
 {
-	pharoah.player = team;
-	pharoah.hasMirror = false;
-	pharoah.angle = angle;
+	this->player = team;
+	this->hasMirror = false;
+	this->angle = angle;
 
-	pharoah.up = false;
-	pharoah.down = false;
-	pharoah.left = false;
-	pharoah.right = false;
+	this->up = false;
+	this->down = false;
+	this->left = false;
+	this->right = false;
 
-	pharoah.Orient1 = "/-\\";
-	pharoah.Orient1 += "-+-";
-	pharoah.Orient1 += "\\-/";
+	this->Orient1 = "/-\\";
+	this->Orient1 += "-+-";
+	this->Orient1 += "\\-/";
 	//	
 
 }
 
-void rotateCCW(Piece p1)
+void Piece::rotateCCW()
 {	
-	if (!(p1.angle == 4))
+	if (!(this->angle == 4))
 	{
-		p1.angle += 1;
+		this->angle += 1;
 	}
 	else
-		p1.angle = 1;
+		this->angle = 1;
 
-	switch (p1.angle)  // may not even need this but just incase
+	switch (this->angle)  // may not even need this but just incase
 	{
 	case 1:
 		//redraw the piece with Orient 1
@@ -248,16 +248,16 @@ void rotateCCW(Piece p1)
 	}
 }
 
-void rotateCW(Piece p1)
+void Piece::rotateCW()
 {
-	if (!(p1.angle == 1))
+	if (!(this->angle == 1))
 	{
-		p1.angle -= 1;
+		this->angle -= 1;
 	}
 	else
-		p1.angle = 4;
+		this->angle = 4;
 
-	switch (p1.angle)
+	switch (this->angle)
 	{
 	case 1:
 		//redraw the piece with Orient 1
