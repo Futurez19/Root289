@@ -280,7 +280,7 @@ void rotateCW(Piece p1)
 //I apologize for the messy switches.
 
 //int deflect(Laser laser, Piece p1)
-{
+//{
 	//if (p1.hasMirror)
 	//{
 	//	switch (laser.angle)//dependant on incoming laser
@@ -369,4 +369,4 @@ void rotateCW(Piece p1)
 	//else
 	//	//piece dies
 
-}
+//}
